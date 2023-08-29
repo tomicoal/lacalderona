@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La Calderona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Disfruta de deliciosa comida casera a domicilio con ingredientes frescos y sabores auténticos. Menú variado de platos hechos con amor y entregados directamente a tu puerta.">
+    <meta name="keywords" content="comida casera, a domicilio, entrega de alimentos, menú variado, ingredientes frescos, sabores auténticos, platos caseros">
+    <meta name="author" content="la Calderona">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="la Calderona - Comida Casera a Domicilio">
+    <meta property="og:description" content="Saborea la auténtica comida casera con nuestro variado menú de platos preparados con ingredientes frescos y entregados a tu puerta.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="images/favicon/favicon_lacalderona.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://bakpbgckdnepkmkeaiomhmfcnejndkbi/pesticide.min.css" id="pesticideCSS">
+    <script type="text/javascript" src="chrome-extension://bakpbgckdnepkmkeaiomhmfcnejndkbi/pesticide.js" id="pesticideJS"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
+
+    <style>
+        body {
+        font-family: 'Montserrat', sans-serif;
+        color: #61381B;
+        }
+        h1 {
+        color: #525455;
+        }
+        h2 {
+        color: #525455;
+        }
+        h4 {
+        color: #61381B;
+        }
+
+        #order_button {
+        background-color: #ED8A42;
+        color: white;
+        }
+
+        #introduction {
+        background-color: #f8f5ee;
+        }
+
+        #map {
+        background-color: #f8f5ee;
+        }
+
+        #myiframe {
+        width: 100%;
+        height: 100%;
+   }
+
+    </style>
+
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+  </script>
+
+</head>
+
+<body>
+
+<header class="sticky-top my-1">
+  <div id="top_container" class="container bg-white bg-gradient text-dark rounded-bottom" >
+      <nav class="navbar navbar-expand-md">
+            <div class="container d-flex justify-content-start">
+              <a class="navbar-brand" href="#"><img src="images/logo/sin/sin-marron.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+                  <img src="images/logo/text/text.png" class="d-inline-block align-text-top"></a>
+                <div class="container d-flex justify-content-md-end">
+                    <button id="order_button" class="btn rounded-pill" type="button" href="#"><strong>Haz tu Pedido</strong></button>
+                </div>
+            </div>
+      </nav>
+  </div>
+</header>
+
+<section id="introduction" class="mt-1 mb-5">
+    <div class="container">
+      <div class =" container justify-content-center">
+        <div class="row flex-lg-row-reverse align-items-center px-4 py-4 my-1">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="images/logo/updown/updown-azul.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 my-1">Quienes somos</h1>
+              <p class="lead">¡Bienvenidos a nuestro sitio web! En <strong>la Calderona</strong>, estamos encantados de llevarte la auténtica experiencia de la cocina casera directamente a tu puerta.</p>
+              <p>Disfruta de la auténtica cocina casera con toques únicos, cortesía del <strong>Chef Carlos</strong> y su equipo. Desde clásicos reconfortantes hasta creaciones innovadoras, saborea la pasión culinaria en cada bocado, entregado directamente a tu puerta.</p>
+            </div>
+        </div>
+      </div>
+
+        <div class="container pb-2">
+          <div class="container d-flex justify-content-center">
+              <a class="text-body-secondary" href="https://www.instagram.com/lakalderona/"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+              </a>
+          </div>
+          <div class="container d-flex justify-content-center">
+            <p>¡Síguenos en instagram!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="menu" class="menu my-1">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-header text-center">
+          <h2>Nuesto Menu</h2>
+          <p>Explora nuestro menú diverso y tentador, desde <strong>clásicos </strong>reconfortantes hasta opciones más <strong>innovadoras.</strong></p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" role="tablist">
+
+          <li class="nav-item" role="presentation">
+            <a class="nav-link show active" data-bs-toggle="tab" data-bs-target="#menu-starters" aria-selected="true" role="tab">
+              <h4>Primeros</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast" aria-selected="false" role="tab" tabindex="-1">
+              <h4>Segundos</h4>
+            </a><!-- End tab nav item -->
+
+          </li><li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch" aria-selected="false" role="tab" tabindex="-1">
+              <h4>Postres</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner" aria-selected="false" role="tab" tabindex="-1">
+              <h4>Pan</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="menu-starters" role="tabpanel">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Primeros</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="images/logo/sin/sin-azul.png" class="menu-img img-fluid" alt="imagen_1"></a>
+                <h4>Lasaña de berenjena y calabacín</h4>
+                <p class="ingredients">
+                  Berenjenas, calabacines, salsa de tomate, quesos (ricotta, mozzarella y parmesano).
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="images/logo/sin/sin-amarillo.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Arroz con pisto y huevos poché</h4>
+                <p class="ingredients"> Arroz, pisto, huevos, aceite de oliva, sal.
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="images/logo/sin/sin-rojo.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Salmón a baja temperatura</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="images/logo/sin/sin-marron.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="images/logo/sin/sin-rojo.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="images/logo/sin/sin-azul.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Primeros Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast" role="tabpanel">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Segundos</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="images/logo/sin/sin-azul.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Guiso de ternera con arroz</h4>
+                <p class="ingredients">
+                  Ternera, arroz, verduras, caldo, especias.
+                </p>
+                <p class="price">
+                  $10.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="images/logo/sin/sin-rojo.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Tagliatelle con boloñesa</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="images/logo/sin/sin-azul.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Garbanzos con chorizo</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="images/logo/sin/sin-rojo.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Lomo a la pimienta con champiñones y arroz</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="images/logo/sin/sin-azul.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="images/logo/sin/sin-rojo.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Segundos Menu Content -->
+
+          <div class="tab-pane fade" id="menu-lunch" role="tabpanel">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Postres</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="images/logo/sin/sin-marron.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Brownie de chocolate</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="images/logo/sin/sin-amarillo.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Cookie con pepitas de chocolate</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="images/logo/sin/sin-marron.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Tarta de queso</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="images/logo/sin/sin-amarillo.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Mousse de limón</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="images/logo/sin/sin-marron.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Eos Luibusdam</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $12.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="images/logo/sin/sin-amarillo.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Laboriosam Direva</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="menu-dinner" role="tabpanel">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Pan</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="images/logo/sin/sin-marron.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Chapata</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $5.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="images/logo/sin/sin-marron.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Baguette</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $14.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="images/logo/sin/sin-marron.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Sin gluten</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $8.95
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Dinner Menu Content -->
+
+        </div>
+
+      </div>
+</section>
+
+<section id="map" class="my-1">
+  <div class="container align-items-center px-4 py-4 my-5">
+    <div class="section-header text-center">
+          <h2>¿Dónde estamos?</h2>
+      <p><i>Habla con nosotros</i></p>
+      <div class="container">
+        <div class ="row">
+          <div class="col">
+            <p><strong> la Calderona</strong></p>
+            <p> Calle Príncipe De Asturias 5, 28006 Madrid, Madrid, Spain </p>
+            <p>+34 658 550 787 </p>
+            </p>
+          </div>
+          <div class="col">
+            <p><strong>Horario</strong></p>
+            <p>Martes a jueves de 20 a 22.30</p>
+            <p>Viernes y Sabado de 13 a 23:30</p>
+            <p>Domingo de 13 a 22:30.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+    <div class="container">
+      <iframe id="myiframe" width="740" height="300" frameborder="5" scrolling="no" onload="resizeIframe(this)"
+              marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=calle%20principe%20de%20asturias%205%20Madrid+(la%20Calderona)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="footer" class="my-1">
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <img src="images/logo/centre/centre-marron.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 La Calderona</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/lakalderona/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+  </svg></a></li>
+      </ul>
+    </footer>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+</html>
